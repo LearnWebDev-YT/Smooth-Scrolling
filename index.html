@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Smooth Scroll</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="flex">
+        <h1><span>Food</span> Life</h1>
+        <ul class="flexing">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="bg">
+    <div class="container">
+      <h1>HOME</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam provident ipsa, sapiente quidem esse
+        consequatur incidunt voluptates soluta non. Voluptates corporis fuga sequi enim voluptate magnam consequuntur
+        soluta, at et hic quasi dolorem, pariatur, tempore excepturi quisquam corrupti nemo est similique aperiam
+        eligendi consequatur deserunt amet odit quis. Iusto, eligendi.</p>
+      <button>HOME</button>
+    </div>
+  </section>
+  <section id="about" class="bg">
+    <div class="container">
+      <h1>ABOUT</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam provident ipsa, sapiente quidem esse
+        consequatur incidunt voluptates soluta non. Voluptates corporis fuga sequi enim voluptate magnam consequuntur
+        soluta, at et hic quasi dolorem, pariatur, tempore excepturi quisquam corrupti nemo est similique aperiam
+        eligendi consequatur deserunt amet odit quis. Iusto, eligendi.</p>
+      <button>ABOUT</button>
+    </div>
+  </section>
+  <section id="contact" class="bg">
+    <div class="container">
+      <h1>CONTACT</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam provident ipsa, sapiente quidem esse
+        consequatur incidunt voluptates soluta non. Voluptates corporis fuga sequi enim voluptate magnam consequuntur
+        soluta, at et hic quasi dolorem, pariatur, tempore excepturi quisquam corrupti nemo est similique aperiam
+        eligendi consequatur deserunt amet odit quis. Iusto, eligendi.</p>
+      <button>CONTACT</button>
+    </div>
+  </section>
+
+  <script>
+    var scroll = new SmoothScroll('.navbar a[href*="#"]', {
+      speed: 1200
+    });
+  </script>
+</body>
+
+</html>
